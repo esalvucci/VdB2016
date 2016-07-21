@@ -1,6 +1,7 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper, left=15mm, top=20mm, right=15mm]{geometry}
+
 \usepackage{multirow}
 \usepackage{pdflscape}
 \usepackage{subfiles}
@@ -10,14 +11,20 @@
 
 \title{Libretto vecchi lupi VdB 2016}
 \author{Staff}
-\date{June/July 2016}
+\date{31 Luglio / 7 Agosto 2016}
 
 \usepackage{natbib}
 \usepackage{graphicx}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\begin{figure}[p]
+    \vspace*{-2cm}
+    \makebox[\linewidth]{
+        \includegraphics[width=1.2\linewidth]{locandina.jpg}
+    }\end{figure}
+\end{titlepage}
 
 \begin{landscape}
 \begin{adjustwidth}{-2.5cm}{-1cm}% adjust the L and R 
@@ -71,10 +78,12 @@
     \subfile{subsections/giovedi_4.tex}
 \newpage
     \subfile{subsections/venerdi_5.tex}
-%\newpage
-%    \subfile{subsections/sabato_6.tex}
-%\newpage
-%    \subfile{subsections/domenica_7.tex}
-%\newpage
-%    \subfile{subsections/personaggi.tex}
+\newpage
+    \subfile{subsections/sabato_6.tex}
+\newpage
+    \subfile{subsections/domenica_7.tex}
+\newpage
+    \subfile{subsections/botteghe.tex}
+    \subfile{subsections/personaggi.tex}
+
 \end{document}
